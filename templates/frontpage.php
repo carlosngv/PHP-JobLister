@@ -20,14 +20,16 @@
     <?php foreach($jobs as $job): ?>
 
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-9">
             <h4><?php echo $job -> job_title; ?></h4>
             <b><?php echo $job -> cname; ?></b>
             <p><?php echo $job -> description; ?></p>
         </div>
 
-        <div class="col-md-2">
-            <a class="btn btn-primary btn-lg" href="job.php?id=<?php echo $job -> id; ?>" >View</a>
+        <div class="col-md-3">
+            <a class="btn btn-primary m-1" href="job.php?id=<?php echo $job -> id; ?>" >View</a>
+            <a class="btn btn-info m-1" href="edit.php?id=<?php echo $job -> id; ?>" >Edit</a>
+            <a class="btn btn-danger m-1" href="index.php?id=<?php echo $job -> id; ?>" >Delete</a>
         </div>
 
     </div>

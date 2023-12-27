@@ -29,6 +29,19 @@
         $frontPageTemplate -> jobs = $job -> getAllJobs();
     }
 
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
+
+        if($job -> deleteJob($id)) {
+            // ? Custom helper function
+            redirect('index.php', 'The job has successfully been <strong>deleted</strong>!', 'success');
+        } else {
+            redirect('index.php', '<strong>Something went wrong.</strong> Contact your administrator.', 'error');
+        }
+
+
+    }
+
     // ? Setting vars to frontpage
     $frontPageTemplate -> categories = $job -> getCategories();
 

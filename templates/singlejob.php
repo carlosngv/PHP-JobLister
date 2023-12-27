@@ -12,6 +12,7 @@
     <ul class="list-group">
         <li class="list-group-item"><strong>Company:</strong> <?php echo $job -> company;?></li>
         <li class="list-group-item"><strong>Salary:</strong> <?php echo $job -> salary;?></li>
+        <li class="list-group-item"><strong>Contact user:</strong> <?php echo $job -> contact_user;?></li>
         <li class="list-group-item"><strong>Contact email:</strong> <?php echo $job -> contact_email;?></li>
     </ul>
 

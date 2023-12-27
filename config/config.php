@@ -1,4 +1,4 @@
-<!-- This will hold the database parameters -->
+<!-- This will hold the database parameters (CONSTANTS) -->
 
 <?php
 

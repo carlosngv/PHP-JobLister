@@ -12,5 +12,8 @@
         $jobTemplate -> job = $job -> getJobById($jobId);
     }
 
+    $jobTemplate -> title = $jobTemplate -> job -> job_title;
+
+
     echo $jobTemplate
 ?>
